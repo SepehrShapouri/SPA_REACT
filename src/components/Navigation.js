@@ -14,7 +14,6 @@ const Navigations = () => {
               <NavLink
                 to={item.to}
                 className={({ isActive }) => (isActive ? "activeLink" : "")}
-                exact={item.exact || false}
               >
                 {item.name}
               </NavLink>

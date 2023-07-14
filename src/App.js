@@ -1,9 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutUs from "./pages/AboutUs";
-import Navigations from "./components/Navigation";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import "./App.css";
-import Profile from "./pages/Profile";
 import Layout from "./layout/Layout";
 import routes from "./routes";
 const App = () => {
