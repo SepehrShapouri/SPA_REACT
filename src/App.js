@@ -9,7 +9,7 @@ const App = () => {
         <Layout>
           <Routes>
           {routes.map((route)=>{
-            return <Route {...route}/>
+            return <Route key={route.path}{...route}/>
           })}
           </Routes>
         </Layout>
