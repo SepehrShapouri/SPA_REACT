@@ -25,5 +25,15 @@ ul li{
 }
 footer{
   background-color: rgb(226,221,221);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
+.headerTitle{
+  margin-top: 1rem;
+  
+}
+.BlogLinkHolder{
+  display: flex;
+  flex-direction: column;
+}
