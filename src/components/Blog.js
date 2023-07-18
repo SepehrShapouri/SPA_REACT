@@ -12,8 +12,8 @@ const Blog = (props) => {
     <div>
       <h2>Blog Page - {id}</h2>
       <div className="BlogLinkHolder">
-      <Link to={"/blogs"}> Go to Blog Page</Link>
-      <Link to={`/blogs/${parseInt(id) + 1}`}>Go to Next Page</Link>
+        <Link to={"/blogs"}> Go to Blog Page</Link>
+        <Link to={`/blogs/${parseInt(id) + 1}`}>Go to Next Page</Link>
       </div>
     </div>
   );
