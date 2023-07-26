@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useParams,useLocation} from "react-router-dom";
+import queryString from 'query-string';
 import { Link } from "react-router-dom";
 export function withRouter(Children) {
     return (props) => {
@@ -7,13 +8,17 @@ export function withRouter(Children) {
     };
   }
 const Post = (props) => {
+    const location = useLocation()
     const id = props.match.params.id || 1
-    console.log(props.match.params.id)
+    const query = queryString.parse(location.search)
+    console.log(query)
     return ( 
         <>
         <p>welcome to posts section</p>
-        <p>post-{id}</p>
+        <p>post no.{id},{query.name}</p>
         <Link to={`/Posts/${parseInt(id)+1}`}>Next Post?</Link>
+        <br></br>
+        <Link to={"/posts"}>Back to Posts Page?</Link>
         </>
      );
 }
