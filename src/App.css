@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,900&display=swap');
 .activeLink{
-  color: rgb(161, 17, 197);
+  color:#2dd4bf;
 }
 *{
   box-sizing: border-box;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: calibri;
+font-family: 'Roboto', sans-serif;
+  color: #134e4a;
+}
+.pagelayout{
+  text-align: center;
+}
+.maintitle{
+  margin: 1rem 0;
 }
 a{
   text-decoration: none;
-  color: #444;
+  color: #134e4a;
 }
 ul{
-  background-color: #efefef;
+  background-color:#f1f5f9;
   display: flex;
   justify-content: flex-start;
   height: 60px;
@@ -24,10 +32,15 @@ ul li{
   margin-left: 20px;
 }
 footer{
-  background-color: rgb(226,221,221);
+  background-color: #f1f5f9;
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headerTitle{
   margin-top: 1rem;
@@ -36,4 +49,60 @@ footer{
 .BlogLinkHolder{
   display: flex;
   flex-direction: column;
+}
+.profileTitle{
+  font-size: 2rem;
+  margin: 1rem;
+}
+.dashboard{
+margin: 1rem;
+font-size: 1rem;
+font-weight: bold;
+}
+.dashboarditems{
+background-color:#f1f5f9;
+width: 100%;
+height: 100%;
+display: flex;
+margin-top: 10px;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 10px;
+
+}
+.dashboarditems p{
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+  border-radius: 100%;
+  background-color: #99f6e4;
+  cursor: pointer;
+}
+.dashboarditems p:hover{
+  background-color: #0d9488;
+  transition: all 0.2s ease-in;
+}
+.blogpage{
+  margin: 1rem;
+}
+.blogitemsholder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.blogitem{
+  background-color: #99f6e4;
+  height: 100px;
+  width: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+text-transform: capitalize;
+}
+.blogitem:hover{
+  background-color: #0d9488;
 }

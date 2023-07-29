@@ -7,15 +7,17 @@ const items = [
 ];
 const BlogPage = () => {
   return (
-    <div>
-      <h2>Blog Page</h2>
-      {items.map((item) => {
-        return (
-          <li key={item.to}>
-            <Link to={item.to}>{item.name}</Link>
-          </li>
-        );
-      })}
+    <div className="blogpage">
+      <h2 clas>Blog Page</h2>
+      <div className="blogitemsholder">
+        {items.map((item) => {
+          return (
+            <li className="blogitem" key={item.to}>
+              <Link to={item.to}>{item.name}</Link>
+            </li>
+          );
+        })}
+      </div>
     </div>
   );
 };
