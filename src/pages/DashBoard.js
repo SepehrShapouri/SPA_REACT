@@ -1,8 +1,14 @@
 const DashBoard = () => {
   return (
-    <>
-      <h2>this is DashBoard!</h2>
-    </>
+    <div className="dashboard">
+      <p>user dashboard</p>
+      <div className="dashboarditems">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ import App from "../App";
 import { Outlet } from "react-router";
 const Profile = () => {
   return <section>
-    <p>welcome back chef!</p>
+    <p className="profileTitle">welcome back chef!</p>
     <SideBar/>
     <Outlet/>
   </section>;
