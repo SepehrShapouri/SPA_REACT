@@ -3,7 +3,7 @@ const SideBar = () => {
   return (
     <ul className="aside">
       <li>
-        <Link to={"/profile/Dashboard"}>Dashboard</Link>
+        <Link to={"/profile/dashboard"}>Dashboard</Link>
       </li>
       <li>
         <Link to={"/profile/Setting"}>Setting</Link>
