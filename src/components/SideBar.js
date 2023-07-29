@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./components.css";
 const SideBar = () => {
   return (
     <ul className="aside">
       <li>
-        <Link to={"/profile/dashboard"}>Dashboard</Link>
+        <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={"/profile/dashboard"}>Dashboard</NavLink>
       </li>
       <li>
-        <Link to={"/profile/Setting"}>Setting</Link>
+        <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={"/profile/Setting"}>Setting</NavLink>
       </li>
       <li>
-        <Link to={"/profile/Downloads"}>Download</Link>
+        <NavLink  className={({ isActive }) => (isActive ? 'active' : '')} to={"/profile/Downloads"}>Download</NavLink>
       </li>
     </ul>
   );
