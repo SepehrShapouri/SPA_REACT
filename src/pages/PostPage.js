@@ -7,15 +7,17 @@ const posts = [
 ];
 const PostPage = () => {
   return (
-    <div>
+    <div className="blogpage">
       <h2>Post Page</h2>
+      <div className="blogitemsholder">
       {posts.map((post)=>{
         return(
-            <li key={post.to}>
+            <li key={post.to} className="blogitem">
             <Link to={{pathname:post.to,search:"name=ali"}}>{post.name}</Link>
         </li>
         )
       })}
+      </div>
     </div>
   );
 };
